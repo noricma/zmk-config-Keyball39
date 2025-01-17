@@ -1,35 +1,35 @@
 layers:
-  QWRT:
+  ONISHI:
   - Q
-  - W
-  - E
-  - R
+  - L
+  - U
+  - F
   - T
   - Y
-  - U
-  - I
-  - O
+  - W
+  - R
+  - Y
   - P
+  - E
+  - I
   - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
+  - O
+  - {t: '-', s: _}
   - K
-  - L
-  - {t: ;, s: ':'}
+  - T
+  - N
+  - S
+  - H
   - Z
   - X
   - C
   - V
-  - B
-  - N
-  - M
   - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - G
+  - D
+  - M
+  - J
+  - B
   - $$mdi:apple-keyboard-control$$
   - LEFT WIN
   - $$mdi:apple-keyboard-option$$
