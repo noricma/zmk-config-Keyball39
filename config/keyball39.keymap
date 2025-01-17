@@ -65,6 +65,15 @@
         };
     };
 
+    macros {
+        bt0: bt0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp>;
+            label = "BT0";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
