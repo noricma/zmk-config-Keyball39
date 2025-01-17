@@ -1,16 +1,12 @@
-#define DEFAULT 0
-#define NUM     1
-#define SYM     2
-#define FUN     3
-#define MOUSE   4
-#define SCROLL  5
-#define SNIPE   6
+#define ONISHI_M 0
+#define ONISHI_W 1
+#define NUM     2
+#define SYM     3
+#define FUN   4
+#define MOUSE  5
+#define SCROLL   6
+#define BT   7
 #define U_MOUSE_MOVE_MAX 1000  // 新しい最大速度設定（デフォルトは600）
-
-#undef MOVE_UP
-#undef MOVE_DOWN
-#undef MOVE_LEFT
-#undef MOVE_RIGHT
 
 #define MOVE_UP MOVE_VERT(-U_MOUSE_MOVE_MAX)
 #define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)
