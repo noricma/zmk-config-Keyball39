@@ -279,3 +279,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [21, 22]
+  k: LANG2
+- p: [27, 28]
+  k: LANG1
