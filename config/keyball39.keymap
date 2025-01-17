@@ -60,6 +60,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        eisu {
+            bindings = <&kp LANG2>;
+            key-positions = <21 22>;
+        };
+
+        kana {
+            bindings = <&kp LANG1>;
+            key-positions = <27 28>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
