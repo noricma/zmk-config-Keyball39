@@ -14,10 +14,11 @@
 
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <240>;
@@ -55,12 +56,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        to_layer: to_layer {
-            compatible = "zmk,behavior-to-layer";
-            #binding-cells = <1>;
-            display-name = "To Layer";
-        };
-
         tog: toggle_layer {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
@@ -87,7 +82,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&to 0>,
+                <&tog 0>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 0>,
                 <&macro_wait_time 500>;
@@ -99,11 +94,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&to 0>,
+                <&tog 0>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 1>,
                 <&macro_wait_time 500>,
-                <&to 1>;
+                <&tog 1>;
 
             // Windows用レイヤーに移動
 
