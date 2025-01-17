@@ -7,7 +7,6 @@
 #define SCROLL   6
 #define BT   7
 #define U_MOUSE_MOVE_MAX 1000  // 新しい最大速度設定（デフォルトは600）
-
 #define MOVE_UP MOVE_VERT(-U_MOUSE_MOVE_MAX)
 #define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)
 #define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
@@ -106,7 +105,9 @@
                 <&bt BT_SEL 1>,
                 <&macro_wait_time 500>,
                 <&to 1>;
-  // Windows用レイヤーに移動
+
+            // Windows用レイヤーに移動
+
             label = "BT1";
         };
     };
@@ -191,6 +192,8 @@
 &trans      &trans  &trans  &trans        &trans                  &trans  &trans  &trans  &trans  &trans
 &trans      &trans  &trans  &trans        &trans  &trans  &trans  &trans                          &trans
             >;
+
+            label = "BT";
         };
     };
 };
