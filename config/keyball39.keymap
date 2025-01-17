@@ -61,18 +61,18 @@
     };
 
     eisu: eisu {
-            compatible = "zmk,behavior-macro";
-            label = "英数";
-            #binding-cells = <0>;
-            bindings = <&kp LANG2>;
-        };
+        compatible = "zmk,behavior-macro";
+        label = "英数";
+        #binding-cells = <0>;
+        bindings = <&kp LANG2>;
+    };
 
-        kana: kana {
-            compatible = "zmk,behavior-macro";
-            label = "かな";
-            #binding-cells = <0>;
-            bindings = <&kp LANG1>;
-        };
+    kana: kana {
+        compatible = "zmk,behavior-macro";
+        label = "かな";
+        #binding-cells = <0>;
+        bindings = <&kp LANG1>;
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -80,10 +80,10 @@
         default_layer {
             label = "ONISHI";
             bindings = <
-&kp Q      &kp L         &kp U     &kp F         &kp T                                    &kp Y            &kp W  &kp R  &kp Y  &kp P
-&kp E      &kp I         &kp A     &kp O         &kp MINUS                                &kp K            &kp T  &kp N  &kp S  &kp H
-&kp Z      &kp X         &kp C     &kp V         &kp COMMA                                &kp G            &kp D  &kp M  &kp J  &kp B
-&kp LCTRL  &kp LEFT_WIN  &kp LALT  &lt 6 ESCAPE  &lt 4 SPACE  &lt 5 LA(GRAVE)  &kp ENTER  &lt 2 BACKSPACE                       &kp RSHFT
+&kp Q      &kp L         &kp U     &kp F        &kp T                                    &kp Y            &kp W  &kp R  &kp Y  &kp P
+&kp E      &kp I         &kp A     &kp O        &kp MINUS                                &kp K            &kp T  &kp N  &kp S  &kp H
+&kp Z      &kp X         &kp C     &kp V        &kp COMMA                                &kp G            &kp D  &kp M  &kp J  &kp B
+&kp LCTRL  &kp LEFT_WIN  &kp LALT  &lt 6 LANG2  &lt 4 SPACE  &lt 5 LA(GRAVE)  &kp ENTER  &lt 2 BACKSPACE                       &kp RSHFT
             >;
         };
 
