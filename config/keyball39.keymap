@@ -49,20 +49,6 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-        tog_on: toggle_layer_on_only {
-            compatible = "zmk,behavior-toggle-layer";
-            #binding-cells = <1>;
-            display-name = "Toggle Layer On";
-            toggle-mode = "on";
-        };
-
-        tog_off: toggle_layer_off_only {
-            compatible = "zmk,behavior-toggle-layer";
-            #binding-cells = <1>;
-            display-name = "Toggle Layer Off";
-            toggle-mode = "off";
-        };
     };
 
     combos {
@@ -82,13 +68,23 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            label = "ONISHI";
+        default_mac {
+            label = "ONISHI_M";
             bindings = <
 &kp Q             &kp L             &kp U             &kp F                       &kp T                             &kp Y        &kp W  &kp R  &kp Y  &kp P
 &kp E             &kp I             &kp A             &kp O                       &kp MINUS                         &kp K        &kp T  &kp N  &kp S  &kp H
 &kp Z             &kp X             &kp C             &kp V                       &kp COMMA                         &kp G        &kp D  &kp M  &kp J  &kp B
-&mt LEFT_ALT TAB  &kp LEFT_COMMAND  &kp LEFT_CONTROL  &mt LEFT_COMMAND BACKSPACE  &lt 1 SPACE  &lt 4 DELETE  &to 3  &lt 2 ENTER                       &kp RSHFT
+&mt LEFT_ALT TAB  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &mt LEFT_COMMAND BACKSPACE  &lt 2 SPACE  &lt 5 DELETE  &to 4  &lt 3 ENTER                       &kp RSHFT
+            >;
+        };
+
+        default_win {
+            label = "ONISHI_W";
+            bindings = <
+&kp Q             &kp L         &kp U             &kp F                       &kp T                             &kp Y        &kp W  &kp R  &kp Y  &kp P
+&kp E             &kp I         &kp A             &kp O                       &kp MINUS                         &kp K        &kp T  &kp N  &kp S  &kp H
+&kp Z             &kp X         &kp C             &kp V                       &kp COMMA                         &kp G        &kp D  &kp M  &kp J  &kp B
+&mt LEFT_ALT TAB  &kp LEFT_ALT  &kp LEFT_COMMAND  &mt LEFT_CONTROL BACKSPACE  &lt 2 SPACE  &lt 5 DELETE  &to 4  &lt 3 ENTER                       &kp RSHFT
             >;
         };
 
@@ -105,20 +101,20 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&kp AT_SIGN    &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &none                          &none       &none              &kp UP_ARROW     &none                 &none
+&kp AT_SIGN    &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &none                          &none       &kp HOME           &kp UP_ARROW     &kp END               &none
 &kp HASH       &kp LEFT_PARENTHESIS  &kp SQT            &kp RIGHT_PARENTHESIS  &kp AMPERSAND                  &none       &kp LEFT_ARROW     &kp DOWN_ARROW   &kp RIGHT_ARROW       &none
 &kp BACKSLASH  &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp PIPE                       &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
-&trans         &trans                &trans             &trans                 &trans         &trans  &trans  &trans                                                                &to 7
+&trans         &trans                &trans             &trans                 &trans         &trans  &trans  &trans                                                                &to 8
             >;
         };
 
         function_layer {
             label = "FUN";
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &none                   &none   &none  &none  &none  &none
-&kp F5  &kp F6   &kp F7   &kp F8   &none                   &none   &none  &none  &none  &none
-&kp F9  &kp F10  &kp F11  &kp F12  &none                   &none   &none  &none  &none  &none
-&trans  &trans   &trans   &trans   &trans  &trans  &trans  &trans                       &trans
+&none    &kp F1  &kp F2  &kp F3  &none                   &none   &none  &none  &none  &none
+&kp F10  &kp F4  &kp F5  &kp F6  &none                   &none   &none  &none  &none  &none
+&kp F11  &kp F7  &kp F8  &kp F9  &none                   &none   &none  &none  &none  &none
+&kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans                       &trans
             >;
         };
 
@@ -126,9 +122,9 @@
             label = "MOUSE";
             bindings = <
 &none  &none   &none   &none   &none                   &none          &none      &none  &none      &none
-&none  &none   &none   &none   &none                   &kp PAGE_UP    &mkp LCLK  &to 5  &mkp RCLK  &mkp MCLK
+&none  &none   &none   &none   &none                   &kp PAGE_UP    &mkp LCLK  &to 6  &mkp RCLK  &mkp MCLK
 &none  &none   &none   &none   &none                   &kp PAGE_DOWN  &none      &none  &none      &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &mo 3                                       &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &mo 4                                       &none
             >;
         };
 
