@@ -34,8 +34,8 @@ layers:
   - LEFT WIN
   - $$mdi:apple-keyboard-option$$
   - {t: LANG2, h: SNIPE}
-  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
-  - {t: Alt+`, h: SCROLL, s: Alt+~}
+  - {t: '$$mdi:backspace$$', h: MOUSE}
+  - {t: '$$mdi:keyboard-space$$', h: SCROLL}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', h: SYM}
   - $$mdi:apple-keyboard-shift$$
