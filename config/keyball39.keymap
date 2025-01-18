@@ -60,14 +60,6 @@
             #binding-cells = <1>;
             display-name = "Toggle Layer";
         };
-
-        tog_off: tog_off {
-            compatible = "zmk,behavior-toggle-layer";
-            #binding-cells = <1>;
-            display-name = "Toggle Layer";
-            label = "TOG_OFF";
-            toggle-mode = "off";
-        };
     };
 
     combos {
