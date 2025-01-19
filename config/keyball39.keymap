@@ -12,6 +12,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <240>;
@@ -65,6 +66,11 @@
         kana {
             bindings = <&kp LANG1>;
             key-positions = <27 28>;
+        };
+
+        boot_reset {
+            bindings = <&bootloader>;
+            key-positions = <30 38 5>;
         };
     };
 
