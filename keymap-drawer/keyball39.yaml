@@ -4,7 +4,7 @@ layers:
   - L
   - U
   - F
-  - {t: Sft+Gui+3, h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:keyboard-esc$$
   - Sft+Gui+4
   - W
   - R
@@ -30,7 +30,7 @@ layers:
   - M
   - J
   - B
-  - $$mdi:keyboard-esc$$
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-command$$'}
@@ -44,7 +44,7 @@ layers:
   - L
   - U
   - F
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-esc$$
   - Gui+Sft+S
   - W
   - R
@@ -70,7 +70,7 @@ layers:
   - M
   - J
   - B
-  - $$mdi:keyboard-esc$$
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$'}
