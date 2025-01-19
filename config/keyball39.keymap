@@ -17,7 +17,7 @@
 #define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)
 #define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
 #define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
-#define U_MOUSE_SCROLL_MAX 5  // 新しい最大スクロール速度設定（デフォルトは10）
+#define U_MOUSE_SCROLL_MAX 2  // 新しい最大スクロール速度設定（デフォルトは10）
 
 #undef SCROLL_UP
 #undef SCROLL_DOWN
