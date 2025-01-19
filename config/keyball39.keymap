@@ -28,7 +28,6 @@
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 
 / {
-    // custom shift using mod-morph 
 
     behaviors {
         cmqus: comma_question {
