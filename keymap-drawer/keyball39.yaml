@@ -324,3 +324,5 @@ combos:
   k: LANG2
 - p: [27, 28]
   k: LANG1
+- p: [30, 38, 5]
+  k: $$mdi:progress-download$$
