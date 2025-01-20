@@ -19,7 +19,7 @@ layers:
   - T
   - {t: N, h: SCROLL}
   - S
-  - {t: H, h: MOUSE}
+  - H
   - Z
   - X
   - C
@@ -29,7 +29,7 @@ layers:
   - D
   - M
   - J
-  - B
+  - {t: B, h: MOUSE}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
@@ -59,7 +59,7 @@ layers:
   - T
   - {t: N, h: SCROLL}
   - S
-  - {t: H, h: MOUSE}
+  - H
   - Z
   - X
   - C
@@ -69,7 +69,7 @@ layers:
   - D
   - M
   - J
-  - B
+  - {t: B, h: MOUSE}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
@@ -179,7 +179,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-right-click-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -189,7 +189,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PG DN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -269,7 +269,7 @@ layers:
   - PG UP
   - PG DN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - MUTE
+  - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -289,7 +289,7 @@ layers:
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:volume-high$$
   - '#'
   - (
   - {t: '''', s: '"'}
@@ -299,17 +299,17 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:volume-low$$
   - {t: \, s: '|'}
   - '{'
   - {t: '`', s: '~'}
   - '}'
   - '|'
+  - Gui+$$mdi:keyboard-tab$$
+  - PgUp
+  - PgDn
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
-  - $$mdi:volume-low$$
-  - $$mdi:volume-high$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
