@@ -72,7 +72,7 @@ layers:
   - {t: B, h: MOUSE}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-space$$', h: FUN&BT}
   - {t: '$$mdi:keyboard-tab$$', h: MOUSE}
