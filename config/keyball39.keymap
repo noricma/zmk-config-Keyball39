@@ -109,10 +109,10 @@
         default_mac {
             label = "ONISHI_M";
             bindings = <
-&kp Q           &kp L             &kp U         &kp F                       &kp ESCAPE                               &kp LS(LG(NUMBER_4))  &kp W  &kp R    &kp Y  &kp P
-&kp E           &kp I             &kp A         &kp O                       &kp MINUS                                &kp K                 &kp T  &lt 5 N  &kp S  &lt 4 H
-&kp Z           &kp X             &kp C         &kp V                       &kp COMMA                                &kp G                 &kp D  &kp M    &kp J  &kp B
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &mt LEFT_COMMAND BACKSPACE  &lt 2 SPACE  &lt 4 TAB  &kp RIGHT_SHIFT  &lt 6 ENTER                                  &mo 3
+&kp Q           &kp L             &kp U     &kp F                       &kp ESCAPE                               &kp LS(LG(NUMBER_4))  &kp W  &kp R    &kp Y  &kp P
+&kp E           &kp I             &kp A     &kp O                       &kp MINUS                                &kp K                 &kp T  &lt 5 N  &kp S  &kp H
+&kp Z           &kp X             &kp C     &kp V                       &kp COMMA                                &kp G                 &kp D  &kp M    &kp J  &lt 4 B
+&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RALT  &mt LEFT_COMMAND BACKSPACE  &lt 2 SPACE  &lt 4 TAB  &kp RIGHT_SHIFT  &lt 6 ENTER                                  &mo 3
             >;
         };
 
@@ -120,8 +120,8 @@
             label = "ONISHI_W";
             bindings = <
 &kp Q           &kp L             &kp U     &kp F                       &kp ESCAPE                               &kp LG(LS(S))  &kp W  &kp R    &kp Y  &kp P
-&kp E           &kp I             &kp A     &kp O                       &kp MINUS                                &kp K          &kp T  &lt 5 N  &kp S  &lt 4 H
-&kp Z           &kp X             &kp C     &kp V                       &kp COMMA                                &kp G          &kp D  &kp M    &kp J  &kp B
+&kp E           &kp I             &kp A     &kp O                       &kp MINUS                                &kp K          &kp T  &lt 5 N  &kp S  &kp H
+&kp Z           &kp X             &kp C     &kp V                       &kp COMMA                                &kp G          &kp D  &kp M    &kp J  &lt 4 B
 &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp RALT  &mt LEFT_CONTROL BACKSPACE  &lt 2 SPACE  &lt 4 TAB  &kp RIGHT_SHIFT  &lt 7 ENTER                           &mo 3
             >;
         };
@@ -171,7 +171,7 @@
             bindings = <
 &kp AT_SIGN    &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &none                          &kp C_BRI_UP      &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp C_VOLUME_UP
 &kp HASH       &kp LEFT_PARENTHESIS  &kp SQT            &kp RIGHT_PARENTHESIS  &kp AMPERSAND                  &kp C_BRI_DEC     &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp C_VOLUME_DOWN
-&kp BACKSLASH  &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp PIPE                       &kp RC(UP_ARROW)  &kp PG_UP           &kp PG_DN       &none                &kp K_MUTE
+&kp BACKSLASH  &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp PIPE                       &kp RC(UP_ARROW)  &kp PG_UP           &kp PG_DN       &none                &kp C_MUTE
 &trans         &trans                &trans             &trans                 &trans         &trans  &trans  &trans                                                                     &none
             >;
         };
@@ -179,10 +179,10 @@
         symbol_layer_w {
             label = "SYM_W";
             bindings = <
-&kp AT_SIGN    &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &none                          &none       &kp HOME           &kp UP_ARROW     &kp END          &none
-&kp HASH       &kp LEFT_PARENTHESIS  &kp SQT            &kp RIGHT_PARENTHESIS  &kp AMPERSAND                  &none       &kp LEFT_ARROW     &kp DOWN_ARROW   &kp RIGHT_ARROW  &none
-&kp BACKSLASH  &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp PIPE                       &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none            &none
-&trans         &trans                &trans             &trans                 &trans         &trans  &trans  &trans                                                           &none
+&kp AT_SIGN    &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &none                          &none        &kp HOME        &kp UP_ARROW    &kp END          &kp C_VOLUME_UP
+&kp HASH       &kp LEFT_PARENTHESIS  &kp SQT            &kp RIGHT_PARENTHESIS  &kp AMPERSAND                  &none        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN
+&kp BACKSLASH  &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp PIPE                       &kp LG(TAB)  &kp PAGE_UP     &kp PAGE_DOWN   &none            &kp C_MUTE
+&trans         &trans                &trans             &trans                 &trans         &trans  &trans  &trans                                                        &none
             >;
         };
     };
