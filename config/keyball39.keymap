@@ -12,6 +12,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <240>;
@@ -108,20 +109,20 @@
         default_mac {
             label = "ONISHI_M";
             bindings = <
-&kp Q           &kp L             &kp U       &kp F                       &kp ESCAPE                     &kp LS(LG(NUMBER_4))  &kp W              &kp R    &kp Y        &kp P
-&kp E           &mt LCTRL I       &mt LALT A  &mt LEFT_SHIFT O            &kp MINUS                      &kp K                 &mt RIGHT_SHIFT T  &lt 5 N  &mt RCTRL S  &lt 4 H
-&kp Z           &kp X             &kp C       &kp V                       &kp COMMA                      &kp G                 &kp D              &kp M    &kp J        &kp B
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RALT    &mt LEFT_COMMAND BACKSPACE  &lt 2 SPACE  &lt 4 TAB  &mo 4  &lt 6 ENTER                                                    &mo 3
+&kp Q           &mt LEFT_CONTROL L  &kp U     &mt LEFT_SHIFT F            &kp ESCAPE                            &kp LS(LG(NUMBER_4))  &mt RIGHT_SHIFT W  &kp R    &mt RIGHT_CONTROL Y  &kp P
+&kp E           &kp I               &kp A     &kp O                       &kp MINUS                             &kp K                 &kp T              &lt 5 N  &kp S                &lt 4 H
+&kp Z           &kp X               &kp C     &kp V                       &kp COMMA                             &kp G                 &kp D              &kp M    &kp J                &kp B
+&kp LEFT_SHIFT  &kp LEFT_CONTROL    &kp RALT  &mt LEFT_COMMAND BACKSPACE  &lt 2 SPACE  &lt 4 TAB  &lt 8 DELETE  &lt 6 ENTER                                                            &mo 3
             >;
         };
 
         default_win {
             label = "ONISHI_W";
             bindings = <
-&kp Q           &kp L             &kp U             &kp F                       &kp ESCAPE                     &kp LG(LS(S))  &kp W              &kp R    &kp Y       &kp P
-&kp E           &mt RALT I        &kp A             &mt LEFT_SHIFT O            &kp MINUS                      &kp K          &mt RIGHT_SHIFT T  &lt 5 N  &mt RALT S  &lt 4 H
-&kp Z           &kp X             &kp C             &kp V                       &kp COMMA                      &kp G          &kp D              &kp M    &kp J       &kp B
-&kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_COMMAND  &mt LEFT_CONTROL BACKSPACE  &lt 2 SPACE  &lt 4 TAB  &mo 4  &lt 7 ENTER                                            &mo 3
+&kp Q           &mt RIGHT_ALT L   &kp U          &mt LEFT_SHIFT F            &kp ESCAPE                            &kp LG(LS(S))  &mt RIGHT_SHIFT W  &kp R    &mt RIGHT_ALT Y  &kp P
+&kp E           &kp I             &kp A          &kp O                       &kp MINUS                             &kp K          &kp T              &lt 5 N  &kp S            &lt 4 H
+&kp Z           &kp X             &kp C          &kp V                       &kp COMMA                             &kp G          &kp D              &kp M    &kp J            &kp B
+&kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp RIGHT_ALT  &mt LEFT_CONTROL BACKSPACE  &lt 2 SPACE  &lt 4 TAB  &lt 8 DELETE  &lt 7 ENTER                                                 &mo 3
             >;
         };
 
@@ -138,9 +139,9 @@
         function_layer {
             label = "FUN&BT";
             bindings = <
-&none    &kp F1  &kp F2  &kp F3  &none                   &kp LG(LA(C_POWER))  &none  &none  &none         &none
-&kp F10  &kp F4  &kp F5  &kp F6  &none                   &bt BT_CLR           &bt0   &bt1   &bt BT_SEL 2  &bt BT_SEL 3
-&kp F11  &kp F7  &kp F8  &kp F9  &none                   &none                &none  &none  &none         &none
+&kp F10  &kp F1  &kp F2  &kp F3  &none                   &kp LG(LA(C_POWER))  &none  &none  &none         &none
+&kp F11  &kp F4  &kp F5  &kp F6  &none                   &bt BT_CLR           &bt0   &bt1   &bt BT_SEL 2  &bt BT_SEL 3
+&kp F12  &kp F7  &kp F8  &kp F9  &none                   &none                &none  &none  &none         &none
 &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                           &trans
             >;
         };
@@ -170,7 +171,7 @@
             bindings = <
 &kp AT_SIGN    &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &none                          &kp C_BRI_UP      &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp C_VOLUME_UP
 &kp HASH       &kp LEFT_PARENTHESIS  &kp SQT            &kp RIGHT_PARENTHESIS  &kp AMPERSAND                  &kp C_BRI_DEC     &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp C_VOLUME_DOWN
-&kp BACKSLASH  &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp PIPE                       &kp RC(UP_ARROW)  &kp PG_UP           &kp PG_DN       &none                &kp C_MUTE
+&kp BACKSLASH  &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp PIPE                       &kp RC(UP_ARROW)  &kp BACKSPACE       &none           &kp DELETE           &kp C_MUTE
 &trans         &trans                &trans             &trans                 &trans         &trans  &trans  &trans                                                                     &none
             >;
         };
@@ -180,8 +181,17 @@
             bindings = <
 &kp AT_SIGN    &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &none                          &none        &kp HOME        &kp UP_ARROW    &kp END          &kp C_VOLUME_UP
 &kp HASH       &kp LEFT_PARENTHESIS  &kp SQT            &kp RIGHT_PARENTHESIS  &kp AMPERSAND                  &none        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN
-&kp BACKSLASH  &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp PIPE                       &kp LG(TAB)  &kp PAGE_UP     &kp PAGE_DOWN   &none            &kp C_MUTE
+&kp BACKSLASH  &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp PIPE                       &kp LG(TAB)  &kp BACKSPACE   &none           &kp DELETE       &kp C_MUTE
 &trans         &trans                &trans             &trans                 &trans         &trans  &trans  &trans                                                        &none
+            >;
+        };
+
+        shift_move {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans              &kp RS(UP_ARROW)    &trans               &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &kp RS(LEFT_ARROW)  &kp RS(DOWN_ARROW)  &kp RS(RIGHT_ARROW)  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans              &trans              &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                               &trans
             >;
         };
     };
