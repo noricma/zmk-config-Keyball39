@@ -6,13 +6,13 @@
 #define SCROLL   5
 #define SYM_M     6
 #define SYM_W     7
+#define SHIFT_MOVE     8
 
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <240>;
@@ -187,6 +187,7 @@
         };
 
         shift_move {
+            label = "SHIFT_MOVE";
             bindings = <
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans              &kp RS(UP_ARROW)    &trans               &trans
 &trans  &trans  &trans  &trans  &trans                  &trans  &kp RS(LEFT_ARROW)  &kp RS(DOWN_ARROW)  &kp RS(RIGHT_ARROW)  &trans
