@@ -1,24 +1,24 @@
 layers:
   ONISHI_M:
   - Q
-  - L
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - U
-  - F
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:keyboard-esc$$
   - Sft+Gui+4
-  - W
+  - {t: W, h: '$$mdi:apple-keyboard-shift$$'}
   - R
-  - Y
+  - {t: Y, h: '$$mdi:apple-keyboard-control$$'}
   - P
   - E
-  - {t: I, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: O, h: '$$mdi:apple-keyboard-shift$$'}
+  - I
+  - A
+  - O
   - {t: '-', s: _}
   - K
-  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - T
   - {t: N, h: SCROLL}
-  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - S
   - {t: H, h: MOUSE}
   - Z
   - X
@@ -36,29 +36,29 @@ layers:
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-tab$$', h: MOUSE}
-  - MOUSE
+  - {t: '$$mdi:backspace-reverse-outline$$', h: shift_move}
   - {t: '$$mdi:keyboard-return$$', h: SYM_M}
   - FUN&BT
   ONISHI_W:
   - Q
-  - L
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - U
-  - F
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:keyboard-esc$$
   - Gui+Sft+S
-  - W
+  - {t: W, h: '$$mdi:apple-keyboard-shift$$'}
   - R
-  - Y
+  - {t: Y, h: '$$mdi:apple-keyboard-option$$'}
   - P
   - E
-  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - I
   - A
-  - {t: O, h: '$$mdi:apple-keyboard-shift$$'}
+  - O
   - {t: '-', s: _}
   - K
-  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - T
   - {t: N, h: SCROLL}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - S
   - {t: H, h: MOUSE}
   - Z
   - X
@@ -72,11 +72,11 @@ layers:
   - B
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-tab$$', h: MOUSE}
-  - MOUSE
+  - {t: '$$mdi:backspace-reverse-outline$$', h: shift_move}
   - {t: '$$mdi:keyboard-return$$', h: SYM_W}
   - FUN&BT
   NUM:
@@ -120,7 +120,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   FUN&BT:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F10
   - F1
   - F2
   - F3
@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F10
+  - F11
   - F4
   - F5
   - F6
@@ -140,7 +140,7 @@ layers:
   - '&bt1'
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  - F11
+  - F12
   - F7
   - F8
   - F9
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SCROLL:
@@ -266,9 +266,9 @@ layers:
   - '}'
   - '|'
   - Ctl+$$mdi:arrow-up-bold$$
-  - PG UP
-  - PG DN
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:backspace-reverse-outline$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -306,9 +306,9 @@ layers:
   - '}'
   - '|'
   - Gui+$$mdi:keyboard-tab$$
-  - PgUp
-  - PgDn
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:backspace-reverse-outline$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -319,6 +319,46 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  shift_move:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+$$mdi:arrow-up-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+$$mdi:arrow-left-bold$$
+  - Sft+$$mdi:arrow-down-bold$$
+  - Sft+$$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [21, 22]
   k: LANG2
