@@ -36,7 +36,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-tab$$', h: MOUSE}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: shift_move}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: SHIFT_MOVE}
   - {t: '$$mdi:keyboard-return$$', h: SYM_M}
   - FUN&BT
   ONISHI_W:
@@ -76,7 +76,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-tab$$', h: MOUSE}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: shift_move}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: SHIFT_MOVE}
   - {t: '$$mdi:keyboard-return$$', h: SYM_W}
   - FUN&BT
   NUM:
@@ -319,7 +319,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  shift_move:
+  SHIFT_MOVE:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
