@@ -138,7 +138,7 @@ layers:
   - $$mdi:bluetooth-off$$
   - '&bt0'
   - '&bt1'
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - '&bt2'
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - F12
   - F7
